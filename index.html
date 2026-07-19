@@ -1,1 +1,516 @@
+<!DOCTYPE html>
+<html lang="en">
 
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Pinglo | Modern Websites For Growing Businesses</title>
+
+<link rel="icon" href="assets/logo.png">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Sora:wght@600;700;800&display=swap" rel="stylesheet">
+
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+
+<body>
+
+
+<div class="background">
+
+<div class="orb orb-one"></div>
+<div class="orb orb-two"></div>
+
+</div>
+
+
+
+<header>
+
+
+<div class="brand">
+
+<img src="assets/logo.png">
+
+<span>
+Pinglo
+</span>
+
+</div>
+
+
+
+<nav>
+
+<a href="#services">
+Services
+</a>
+
+<a href="#process">
+Process
+</a>
+
+<a href="#about">
+About
+</a>
+
+<button onclick="openQuote()">
+Start Project
+</button>
+
+
+</nav>
+
+
+</header>
+
+
+
+
+
+<main>
+
+
+<section class="hero">
+
+
+<div class="hero-text">
+
+
+<div class="badge">
+
+🐧 Crescent City's premium web studio
+
+</div>
+
+
+
+<h1>
+
+Websites that make
+<br>
+
+businesses
+<span>
+impossible to ignore.
+</span>
+
+</h1>
+
+
+
+<p>
+
+Pinglo creates fast, modern websites designed to turn visitors into customers.
+
+</p>
+
+
+
+<div class="hero-buttons">
+
+
+<button class="primary"
+onclick="openQuote()">
+
+Build My Website →
+
+</button>
+
+
+<button class="secondary">
+
+See Our Work
+
+</button>
+
+
+</div>
+
+
+
+<div class="trust">
+
+<div>
+<strong>
+2 Weeks
+</strong>
+<br>
+Average Launch
+</div>
+
+
+<div>
+<strong>
+100%
+</strong>
+<br>
+Mobile Ready
+</div>
+
+
+<div>
+<strong>
+Local
+</strong>
+<br>
+Support
+</div>
+
+</div>
+
+
+
+</div>
+
+
+
+
+
+<div class="hero-preview">
+
+
+<div class="browser">
+
+
+<div class="browser-top">
+
+<span></span>
+<span></span>
+<span></span>
+
+</div>
+
+
+
+<div class="website-demo">
+
+
+<img src="assets/logo.png">
+
+
+
+<h3>
+Your business.
+<br>
+A better website.
+</h3>
+
+
+<p>
+Designed by Pinglo
+</p>
+
+
+<button>
+Get Started
+</button>
+
+
+
+</div>
+
+
+</div>
+
+
+
+</div>
+
+
+
+</section>
+
+
+
+
+
+
+
+<section id="services">
+
+
+<h2>
+Everything your business needs online.
+</h2>
+
+
+<div class="cards">
+
+
+<div class="card">
+
+<div class="icon">
+🌐
+</div>
+
+<h3>
+Website Design
+</h3>
+
+<p>
+Beautiful websites designed around your customers.
+</p>
+
+</div>
+
+
+
+
+<div class="card">
+
+<div class="icon">
+⚡
+</div>
+
+<h3>
+Performance
+</h3>
+
+<p>
+Fast loading, optimized, and built for mobile.
+</p>
+
+</div>
+
+
+
+
+
+<div class="card">
+
+<div class="icon">
+📈
+</div>
+
+<h3>
+Growth
+</h3>
+
+<p>
+SEO and strategies that help customers find you.
+</p>
+
+</div>
+
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+
+<section id="process">
+
+
+<h2>
+How Pinglo works
+</h2>
+
+
+<div class="steps">
+
+
+<div>
+<span>
+01
+</span>
+
+<h3>
+Discovery
+</h3>
+
+<p>
+We learn your business and goals.
+</p>
+
+</div>
+
+
+
+<div>
+<span>
+02
+</span>
+
+<h3>
+Design
+</h3>
+
+<p>
+We create your premium website concept.
+</p>
+
+</div>
+
+
+
+
+<div>
+<span>
+03
+</span>
+
+<h3>
+Launch
+</h3>
+
+<p>
+Your new website goes live.
+</p>
+
+</div>
+
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+
+
+
+<!-- QUOTE EXPERIENCE -->
+
+
+<div class="quote-overlay" id="quote">
+
+
+<div class="quote-box">
+
+
+<div class="progress">
+
+<div id="progressBar"></div>
+
+</div>
+
+
+
+<div id="quoteContent">
+
+
+<img class="quote-logo"
+src="assets/logo.png">
+
+
+<h2 id="question">
+
+Let's build something amazing.
+
+</h2>
+
+
+<p id="subtitle">
+
+First, tell us your business name.
+
+</p>
+
+
+
+<input 
+id="answer"
+placeholder="Business name">
+
+
+
+<button onclick="nextQuestion()">
+
+Continue →
+
+</button>
+
+
+
+</div>
+
+
+
+
+
+<div class="loading hidden" id="loading">
+
+
+<img src="assets/logo.png">
+
+
+<h2>
+Preparing your project...
+</h2>
+
+
+<p id="loadingText">
+Analyzing your business...
+</p>
+
+
+</div>
+
+
+
+
+
+
+<div class="complete hidden" id="complete">
+
+
+<img src="assets/logo.png">
+
+
+<h2>
+You're officially on the Pinglo list 🎉
+</h2>
+
+
+<p>
+
+Our team will contact you shortly.
+
+</p>
+
+
+</div>
+
+
+
+
+</div>
+
+
+</div>
+
+
+
+
+
+</main>
+
+
+
+<script src="script.js"></script>
+
+
+</body>
+
+</html>
